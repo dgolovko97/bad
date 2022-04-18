@@ -7,19 +7,17 @@ function preloader() {
 };
 
 $(window).on('load', function () {
-	preloader(),
-	wowanimation();
-	//mainSlider();
-	counter()
+	preloader();
+	counter();
 });
 
 
 // One Page Nav
-var top_offset = $('.main-header').height() - 10;
+/*var top_offset = $('.main-header').height() - 10;
 $('.main-menu nav ul').onePageNav({
 	currentClass: 'active',
 	scrollOffset: top_offset,
-});
+});*/
 
 
 // menu toggle
@@ -93,21 +91,23 @@ function mainSlider() {
 
 
 /* magnificPopup img view */
-$('.popup-image').magnificPopup({
+/*$('.popup-image').magnificPopup({
 	type: 'image',
 	gallery: {
 	  enabled: true
 	}
-});
+});*/
 
 /* magnificPopup video view */
+/*
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
+*/
 
 
 // isotop
-$('.gallery-active').imagesLoaded( function() {
+/*$('.gallery-active').imagesLoaded( function() {
 	// init Isotope
 	var $grid = $('.gallery-active').isotope({
 	  itemSelector: '.grid-item',
@@ -121,7 +121,7 @@ $('.gallery-active').imagesLoaded( function() {
 		var filterValue = $(this).attr('data-filter');
 		$grid.isotope({ filter: filterValue });
 	});
-});
+});*/
 
 //for menu active class
 $('.product-menu button').on('click', function(event) {
@@ -276,18 +276,6 @@ AOS.init({
 	duration: 1000,
 	mirror: true
 });
-
-// WOW active
-function wowanimation() {
-	var wow = new WOW({
-		boxClass: 'wow',
-		animateClass: 'animated',
-		offset: 0,
-		mobile: false,
-		live: true
-	});
-	wow.init();
-}
 
 
 })(jQuery);

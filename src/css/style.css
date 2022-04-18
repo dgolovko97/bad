@@ -422,52 +422,6 @@ label {
 .header-action {
 	margin-left: 32px;
 }
-.header-action ul li {
-	display: inline-block;
-	position: relative;
-}
-.header-action ul li a {
-	display: block;
-	font-size: 14px;
-}
-.header-action ul li.search-icon a {
-	height: 30px;
-	line-height: 30px;
-	width: 30px;
-	text-align: center;
-}
-.header-action ul li.shop-cart a {
-	height: 30px;
-	line-height: 30px;
-	width: 30px;
-	text-align: center;
-	position: relative;
-}
-.header-action ul li.shop-cart .cart-count {
-	position: absolute;
-	height: 8px;
-	width: 8px;
-	background: #ed1d24;
-	border-radius: 50%;
-	right: 4px;
-	top: 4px;
-	z-index: 1;
-}
-.header-action ul li.search-icon::before {
-	content: "";
-	position: absolute;
-	right: 0;
-	top: 50%;
-	height: 25px;
-	width: 1px;
-	background: #d7d7d7;
-	transform: translateY(-50%);
-	border-radius: 50%;
-}
-.search-icon {
-	padding-right: 10px;
-	margin-right: 10px;
-}
 .transparent-header {
 	position: absolute;
 	width: 100%;
@@ -1161,7 +1115,7 @@ label {
 	border-radius: 8px;
 	border-top: 7px solid #eae6e4;
 	border-bottom: 7px solid #eae6e4;
-	padding: 50px 30px;
+	padding: 0 30px 50px;
 	background: #fff;
 	transition: .3s linear;
 }
@@ -1188,22 +1142,13 @@ label {
 	font-weight: 500;
 	color: #717f99;
 }
-.price-count h4 {
-	font-size: 16px;
+.price-count h2 {
+	font-size: 24px;
 	font-weight: 700;
-	box-shadow: 0px 0px 27px 0px rgba(97, 104, 212, 0.17);
+	box-shadow: 0px 0px 17px 0px rgba(97, 104, 212, 0.17);
 	padding: 18px 10px;
 	border-radius: 50px;
-	margin: 0 10px;
-}
-.price-count h4 {
-	font-size: 16px;
-	font-weight: 600;
-	box-shadow: 0px 0px 27px 0px rgba(97, 104, 212, 0.17);
-	padding: 18px 10px;
-	border-radius: 50px;
-	margin: 0 10px;
-	color: #444172;
+	margin: 30px 10px;
 }
 .pricing-list ul li {
 	padding-bottom: 12px;
@@ -1214,6 +1159,9 @@ label {
 	color: #717f99;
 }
 .pricing-btn .btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: none;
 	box-shadow: none;
 	background: #062a4d;
@@ -1222,7 +1170,7 @@ label {
 	border-radius: 50px;
 	text-transform: capitalize;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 24px;
 }
 .pricing-btn .btn i {
 	height: 35px;
@@ -1234,6 +1182,13 @@ label {
 	font-size: 14px;
 	margin-left: 12px;
 	transition: .3s linear;
+}
+.pricing-btn .btn span {
+	letter-spacing: 1px;
+}
+.pricing-icon img{
+	max-width: 300px;
+	width: 100%;
 }
 .pricing-btn .btn::before {
 	display: none;
